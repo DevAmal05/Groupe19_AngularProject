@@ -1,2 +1,20 @@
-<h1>Hello World !!</h1>
+<button pButton pRipple type="button" label="Success" class="p-button-rounded p-button-success"></button>
+<p-tabMenu [model]="items" [activeItem]="activeItem"></p-tabMenu>
+<h1>{{title}}</h1>
+<p>{{text}}</p>
+
+
+<ul *ngFor="let n of nameList ">
+    <li>{{n}}</li>
+</ul>
+
+<div *ngIf="condition">    
+    Hello World
+</div>  
+
+
+
+<p>{{250 | currency:'TND'}}</p>
+<p>{{date |date:'medium' }}</p>
 <button type="button" routerLink="/login" class="btn btn-primary">Login</button>
+<img src="assets/image.jpeg" width="100px">
